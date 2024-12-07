@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: calc(100vh - 5.5rem);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 5px #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+    .shadow-body {
+        --tw-shadow-colored: 0 0 1000px 25px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+}
+
+/* responsiveness for smaller devices */
+@media screen and (max-width: 470px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 247px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 165px) {
+    html {
+        font-size: 20%;
+    }
+}
+
+@media screen and (max-width: 92px) {
+    html {
+        font-size: 12%;
+    }
+}
